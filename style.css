@@ -1,0 +1,110 @@
+body {
+    padding-top: 20px;
+    background-color: #202020;
+    background: url(back.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    color: #E5E5E5;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.converter-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.converter-wrapper input {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.converter-wrapper span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.converter-wrapper span select {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: inherit;
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    border-radius: 0px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -webkit-appearance: none;
+}
+
+.converter-wrapper span::before,
+.converter-wrapper span::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.converter-wrapper span::after {
+    content: "\25BC";
+    height: 1em;
+    font-size: .625em;
+    line-height: 1;
+    right: 1.5em;
+    top: 50%;
+    margin-top: -.5em;
+    color: #131B24;
+}
+
+.converter-wrapper span::before {
+    width: 2.5em;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    background-color: black;
+}
+
+.converter-side-a,
+.converter-side-b {
+    float: left;
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 45%;
+}
+
+.converter-equals {
+    float: left;
+    box-sizing: border-box;
+    width: 10%;
+    color: white;
+    font-size: 2.4em;
+    line-height: 0;
+    text-align: center;
+}
+
+.converter-side-a {
+    padding-right: 10px;
+}
+
+.converter-side-b {
+    padding-left: 10px;
+}
